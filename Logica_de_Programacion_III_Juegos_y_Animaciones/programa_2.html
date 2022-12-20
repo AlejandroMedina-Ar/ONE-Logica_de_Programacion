@@ -1,0 +1,43 @@
+
+<canvas width="600" height="400">
+
+</canvas>
+    
+<script>
+
+function dibujarCuadrado(x,y,color,w,h) {
+     var pantalla = document.querySelector("canvas");
+     var pincel = pantalla.getContext("2d");
+     pincel.fillStyle = color; 
+     pincel.fillRect(x,y,w,h); 
+     pincel.strokeStyle = "black";
+     pincel.strokeRect(x,y,w,h);
+        
+}
+
+/* Bandera de 12 cuadraditos dibujados con el bucle while: */ 
+/*
+var x = 0;
+while(x < 600) {
+    dibujarCuadrado(x,0,"red",50,50);
+    dibujarCuadrado(x,50,"yellow",50,50);
+    dibujarCuadrado(x,100,"green",50,50);
+    x = x + 50;
+}
+*/
+
+/* Bandera de 12 cuadraditos dibujada con el bucle for : */ 
+
+for (var x = 0; x < 600; x = x + 50) {
+    dibujarCuadrado(x,0,"red",50,50);
+    dibujarCuadrado(x,50,"yellow",50,50);
+    dibujarCuadrado(x,100,"green",50,50);
+}
+
+
+
+
+
+
+    
+</script>

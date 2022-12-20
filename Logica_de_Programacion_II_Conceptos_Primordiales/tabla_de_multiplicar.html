@@ -1,0 +1,60 @@
+
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - TABLA DE MULTIPLICAR</h1>
+
+<script>
+
+function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+}
+
+var num = parseInt(prompt("Ingrese el numero de la tabla"));
+
+var multiplicador = 0;
+
+imprimir("Ciclo While:");
+
+while (multiplicador <= 10) {
+    var producto = (num * multiplicador);
+    imprimir(num + " x " + multiplicador + " = " + producto);
+    multiplicador++;
+}
+
+imprimir("Ciclo For:");
+
+for(var i = 0; i <= 10; i++) {
+    
+    multi = num * i;
+    imprimir(num + " x " + i + "= " + multi);
+
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
